@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.header {
+    min-height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    box-shadow: 10px 1px 3px rgb(148, 137, 137);
+}
+.header__logo{
+    width: 5rem;
+    
+}
+.header__social-nav {
+    position: absolute;
+    top: .5rem;
+    right: 2rem;
+}
+
+.navigation{
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation__nav {
+    flex-basis: 80%;
+}
+.navigation__list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation__item{}
+.navigation__link,
+.navigation__link:link,
+.navigation__link:visited{
+    font-size: 1.2rem;
+    color: rgba(black, .7);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.social-nav{
+    
+}
+.social-nav__list{
+    list-style: none;
+    display: flex;
+}
+.social-nav__item{}
+.social-nav__link{}
