@@ -1,0 +1,81 @@
+.sec-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43rem;
+  padding: 4rem 4rem 1rem 4rem;
+  &__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  &__left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    height: 100%;
+  }
+  &__left {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+  }
+  &__image {
+    height: 90%;
+    width: 90%;
+  }
+  &__expo {
+    text-align: justify;
+  }
+}
+
+.sec-products{
+    min-height: 50rem;
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    &__bottom{
+        min-height: 35rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__product{
+        height: 17rem;
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+    }
+    &__icon{
+        height: 7rem;
+        width: 7rem;
+    }
+    &__expo{
+        width: 85%;
+        text-align: center;
+    }
+
+}

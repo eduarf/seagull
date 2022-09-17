@@ -3,14 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: relative;
-  box-shadow: 10px 1px 3px rgb(148, 137, 137);
+  border-bottom: 2px solid $main-color;
   &__logo {
     width: 5rem;
-  }
-  &__social-nav {
-    position: absolute;
-    top: 0.5rem;
-    right: 2rem;
   }
 }

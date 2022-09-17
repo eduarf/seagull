@@ -1,7 +1,12 @@
+@import "abstracts/variables";
+
 @import "base/base";
 
 @import "components/button";
 @import "components/navigation";
-@import "components/social-nav";
 
 @import "layouts/header";
+
+@import "pages/home";
+
+@import "base/typography";

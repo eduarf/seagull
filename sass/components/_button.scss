@@ -1,39 +1,43 @@
-.button{
-    padding: 1.2rem 3rem;
-    text-transform: uppercase;
-    border-radius: 5rem;
-    background-color: #40B2BF;
-    outline: none;
-    color: #fff;
-    border: none;
-    font-size: .9rem;
-    letter-spacing: 1px;
-    cursor: pointer;
-    font-weight: 600;
-    position: relative;
-    span{
-        position: absolute;
-        left: 50%;
+.button {
+  padding: 1.2rem 3rem;
+  text-transform: uppercase;
+  border-radius: 5rem;
+  background-color: $main-color;
+  outline: none;
+  color: $color-white;
+  border: none;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in;
+    &:last-child {
+      top: 0%;
+      color: $color-white;
+      opacity: 0;
+    }
+  }
+  &:hover,
+  &:active {
+    background-color: $second-color;
+    span {
+      &:last-child {
         top: 50%;
-        transform: translate(-50%, -50%);
-        transition: all 0.5s ease-in;
-        &:last-child {
-           top: 0%;
-           color: #fff;
-           opacity: 0;
-        }
+        opacity: 1;
+      }
+      &:first-child {
+        opacity: 0;
+      }
     }
-    &:hover,
-    &:active{
-        background-color: #5CE0EF;
-        span{
-            &:last-child{
-                top: 50%;
-                    opacity: 1;
-            }
-            &:first-child{
-                opacity: 0;
-            }
-        }
-    }
+  }
+  &--middle {
+    font-size: 0.9rem;
+    padding: 1.5rem 7rem;
+  }
 }
