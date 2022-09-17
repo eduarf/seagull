@@ -1,0 +1,25 @@
+.navigation {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  &__nav {
+    flex-basis: 80%;
+  }
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+  }
+  &__link,
+  &__link:link,
+  &__link:visited {
+    font-size: 1.2rem;
+    color: rgba(black, 0.7);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+

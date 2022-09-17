@@ -1,0 +1,27 @@
+{
+  "name": "seagull",
+  "version": "1.0.0",
+  "description": "seagull website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/style.css -w"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduarf/seagull.git"
+  },
+  "keywords": [
+    "software",
+    "website"
+  ],
+  "author": "The Great B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduarf/seagull/issues"
+  },
+  "homepage": "https://github.com/eduarf/seagull#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
