@@ -5,6 +5,13 @@
     font-weight: 800;
     line-height: 1.3px;
 }
+.t1--white{
+    font-family: 'Nunito Sans', sans-serif;
+    color: $color-white;
+    font-size: 2.3rem;
+    font-weight: 800;
+    line-height: 1.3px;
+}
 .t2{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 2rem;
@@ -16,9 +23,12 @@
 }
 .t4{
     font-size: 1.15rem;
-    columns: $color-font-gray
+    color: $color-font-gray;
 }
-
+.s1--white{
+    font-size: 1rem;
+    color: $color-white;
+}
 .s1{
     font-size: 1rem;
     color: #787575;
