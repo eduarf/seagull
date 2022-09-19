@@ -95,15 +95,16 @@ body {
     color: #fff; }
 
 .card {
+  margin: 1rem;
   height: 45%;
-  width: 28%;
+  width: 25%;
   background-color: #fff;
   border-radius: .5rem;
   box-shadow: 0 2rem 2.5rem rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column; }
   .card__top {
-    background-image: linear-gradient(to right bottom, #0053bf, #2776dd);
+    background-image: linear-gradient(to right bottom, rgba(39, 118, 221, 0.7), rgba(39, 118, 221, 0.9));
     border-radius: .5rem .5rem 0 0;
     flex-basis: 55%;
     display: flex;
@@ -141,11 +142,40 @@ body {
   .card__text {
     font-size: 1rem; }
   .card__list {
+    height: 60%;
     width: 90%; }
   .card__item {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding-top: 0.6rem; }
+    .card__item span:last-child {
+      font-weight: 800;
+      color: #0053bf; }
+
+.form__input-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+
+.form__input-name {
+  color: #fff; }
+
+.form__input {
+  height: 2.5rem;
+  width: 80%;
+  border-radius: .5rem;
+  border: none;
+  outline: none; }
+
+.form__text-area {
+  width: 80%;
+  height: 4rem;
+  border-radius: .5rem; }
 
 .header {
   min-height: 8rem;
@@ -280,7 +310,7 @@ body {
 
 .sec-card {
   height: 70rem;
-  padding: 2rem 4rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -292,6 +322,51 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; }
+
+.sec-looking-for {
+  height: 40rem;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../images/office_image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .sec-looking-for__text {
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-size: 3.5rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 1rem; }
+
+.sec-form {
+  height: 35rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 83, 191, 0.5), rgba(0, 83, 191, 0.4));
+  display: flex;
+  padding: 0 4rem; }
+  .sec-form__cap {
+    font-size: 2rem;
+    color: #fff; }
+  .sec-form__form-container {
+    width: 100%;
+    height: 50%; }
+  .sec-form__right-side {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .sec-form__left-side {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  .sec-form__paragraph {
+    width: 85%; }
+  .sec-form__icon {
+    height: 30rem; }
 
 .t1 {
   font-family: 'Nunito Sans', sans-serif;
@@ -322,7 +397,8 @@ body {
 
 .s1--white {
   font-size: 1rem;
-  color: #fff; }
+  color: #fff;
+  letter-spacing: 1px; }
 
 .s1 {
   font-size: 1rem;
