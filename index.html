@@ -14,12 +14,15 @@
     />
     <title>Seagull</title>
   </head>
-  <body>
+  <body id="width">
     <div class="container">
       <header class="header">
         <img src="images/logo_and_icon.png" alt="logo" class="header__logo" />
 
         <div class="navigation">
+          <label class="navigation__button">
+            <span class="navigation__line"></span>
+          </label>
           <nav class="nav-top">
             <ul class="nav-top__list">
               <li class="nav-top__item">
@@ -43,7 +46,7 @@
             </ul>
             <button class="button"><span>Go</span> <span>Go</span></button>
           </nav>
-          <nav class="nav-bottom">
+          <nav class="nav-bottom nav-bottom-show">
             <ul class="nav-bottom__list">
               <li class="nav-bottom__item">
                 <a href="" class="nav-bottom__link">Home</a>
@@ -64,7 +67,7 @@
                 <a href="" class="nav-bottom__link">Contact</a>
               </li>
             </ul>
-            <button class="button"><span>Go</span> <span>Go</span></button>
+            <button class="button button--middle"><span>Go</span> <span>Go</span></button>
           </nav>
         </div>
       </header>
@@ -615,5 +618,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

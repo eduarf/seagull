@@ -3,15 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* 
-mobile ----->   (0-375)px
-mobile-landscape ---- > (376-480)px
-tablet portrait ----- > (481-768)px
-tablet landscape & laptop ----- > (769-1024)px
-desktop ------ > (1025-1200)px
-*/
 html {
     font-size: 16px;
+    @media only screen and (max-width: 1024px){
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 450px){
+        font-size: 12px;
+    }
 }
 body {
     font-family: 'Cabin', sans-serif;

@@ -1,6 +1,9 @@
 @import "abstracts/variables";
 
+
 @import "base/base";
+@import "base/typography";
+
 
 @import "components/button";
 @import "components/navigation";
@@ -12,5 +15,3 @@
 @import "layouts/header";
 
 @import "pages/home";
-
-@import "base/typography";

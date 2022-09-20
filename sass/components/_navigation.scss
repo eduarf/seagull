@@ -1,18 +1,66 @@
 .navigation {
-  width: 75%;
+  width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   position: relative;
-  background-color: orange;
+  @media only screen and(max-width: 900px){
+    width: 100%;
+    }
+  &__checkbox{}
+  &__button{
+    display: block;
+    height: 2rem;
+    width: 2.5rem;
+    background-color: $main-color;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: .2rem;
+  }
+  &__line{
+    display: block;
+    width: 1.4rem;
+    height: 2.5px;
+    background-color: $color-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &::before,
+    &::after{
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 1.4rem;
+      height: 2.5px;
+      background-color: $color-white;
+    }
+    &::before{
+      top: -.4rem;
+    }
+    &::after{
+      top: .4rem;
+    }
+  }
   .nav-top {
     display: flex;
     align-items: center;
-    flex-basis: 80%;
+    width: 85%;
+    justify-content: space-between;
+
+    @media only screen and(max-width: 900px){
+      display: none;
+    }
     &__list {
       list-style-type: none;
       display: flex;
       justify-content: space-around;
       flex: 0 100%;
+      
     }
     &__item {
     }
@@ -25,16 +73,17 @@
         text-transform: uppercase;
         font-weight: 600;
       }
-    }
-    &:hover,
-    &:active {
+      &:hover,
+      &:active {
+        color: $main-color;
+      }
     }
   }
 
   .nav-bottom {
     position: absolute;
     left: 0;
-    top: 2.2rem;
+    top: 4.1rem;
     width: 100%;
     height: 22rem;
     background-color: rgba($second-color, 0.6);
@@ -54,7 +103,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       
     }
     &__link {
@@ -75,4 +124,7 @@
       }
     }
   }
+}
+.nav-bottom-show {
+  visibility: hidden;
 }
