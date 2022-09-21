@@ -272,12 +272,36 @@ object {
 .card {
   margin: 1rem;
   height: 45%;
-  width: 25%;
+  width: 28%;
   background-color: #fff;
   border-radius: .5rem;
   box-shadow: 0 2rem 2.5rem rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 1024px) {
+    .card {
+      width: 40%;
+      height: 30%; } }
+  @media only screen and (max-width: 900px) {
+    .card {
+      width: 45%; } }
+  @media only screen and (max-width: 700px) {
+    .card {
+      width: 60%;
+      height: 33.5rem; } }
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 70%; } }
+  @media only screen and (max-width: 475px) {
+    .card {
+      width: 85%; } }
+  @media only screen and (max-width: 400px) {
+    .card {
+      width: 95%; } }
+  @media only screen and (max-width: 350px) {
+    .card {
+      width: 100%;
+      height: 30rem; } }
   .card__top {
     background-image: linear-gradient(to right bottom, rgba(39, 118, 221, 0.7), rgba(39, 118, 221, 0.9));
     border-radius: .5rem .5rem 0 0;
@@ -327,6 +351,9 @@ object {
     .card__item span:last-child {
       font-weight: 800;
       color: #0053bf; }
+    @media only screen and (max-width: 700px) {
+      .card__item {
+        font-size: 1.2rem; } }
 
 .form__input-container {
   width: 80%;
@@ -334,8 +361,8 @@ object {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  margin-top: .5rem;
-  margin-bottom: .5rem; }
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
 
 .form__input-name {
   color: #fff; }
@@ -343,14 +370,27 @@ object {
 .form__input {
   height: 2.5rem;
   width: 80%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none; }
+  @media only screen and (max-width: 680px) {
+    .form__input {
+      width: 90%; } }
+  @media only screen and (max-width: 400px) {
+    .form__input {
+      width: 100%; } }
 
 .form__text-area {
   width: 80%;
   height: 4rem;
-  border-radius: .5rem; }
+  border-radius: 0.5rem;
+  margin-bottom: 1rem; }
+  @media only screen and (max-width: 680px) {
+    .form__text-area {
+      width: 90%; } }
+  @media only screen and (max-width: 400px) {
+    .form__text-area {
+      width: 100%; } }
 
 .social-icons {
   width: 20%;
@@ -481,6 +521,11 @@ object {
         width: 80%;
         height: 16rem;
         margin-top: 1rem; } }
+    @media only screen and (max-width: 350px) {
+      .sec-products__product {
+        width: 90%;
+        height: 20rem;
+        margin-top: 2rem; } }
   .sec-products__icon {
     height: 8rem;
     width: 8rem; }
@@ -608,12 +653,26 @@ object {
         justify-content: center; } }
 
 .sec-card {
-  height: 70rem;
+  height: 80rem;
   padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 1150px) {
+    .sec-card {
+      padding: 1rem; } }
+  @media only screen and (max-width: 1024px) {
+    .sec-card {
+      height: 120rem;
+      padding: 1rem 6rem; } }
+  @media only screen and (max-width: 900px) {
+    .sec-card {
+      padding: 1rem 3rem; } }
+  @media only screen and (max-width: 700px) {
+    .sec-card {
+      height: auto;
+      padding: 1rem 2rem; } }
   .sec-card__cards {
     flex-basis: 95%;
     width: 100%;
@@ -621,6 +680,9 @@ object {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 700px) {
+      .sec-card__cards {
+        justify-content: center; } }
 
 .sec-looking-for {
   height: 40rem;
@@ -645,27 +707,72 @@ object {
   background-image: linear-gradient(to bottom, rgba(0, 83, 191, 0.5), rgba(0, 83, 191, 0.4));
   display: flex;
   padding: 0 4rem; }
+  @media only screen and (max-width: 1024px) {
+    .sec-form {
+      padding: 0; } }
+  @media only screen and (max-width: 767px) {
+    .sec-form {
+      flex-direction: column;
+      height: 65rem;
+      justify-content: center;
+      align-items: center; } }
   .sec-form__cap {
+    display: inline-block;
     font-size: 2rem;
     color: #fff; }
   .sec-form__form-container {
     width: 100%;
     height: 50%; }
+    @media only screen and (max-width: 900px) {
+      .sec-form__form-container {
+        height: 40%; } }
+    @media only screen and (max-width: 767px) {
+      .sec-form__form-container {
+        height: 50%; } }
   .sec-form__right-side {
-    flex-basis: 50%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 767px) {
+      .sec-form__right-side {
+        align-items: flex-start;
+        width: 100%; } }
   .sec-form__left-side {
-    flex-basis: 50%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; }
+    @media only screen and (max-width: 767px) {
+      .sec-form__left-side {
+        padding-left: 25%;
+        width: 100%; } }
+    @media only screen and (max-width: 680px) {
+      .sec-form__left-side {
+        padding-left: 20%; } }
+    @media only screen and (max-width: 580px) {
+      .sec-form__left-side {
+        padding-left: 15%; } }
   .sec-form__paragraph {
     width: 85%; }
+    @media only screen and (max-width: 767px) {
+      .sec-form__paragraph {
+        width: 75%; } }
   .sec-form__icon {
     height: 30rem; }
+    @media only screen and (max-width: 900px) {
+      .sec-form__icon {
+        height: 25rem; } }
+    @media only screen and (max-width: 767px) {
+      .sec-form__icon {
+        height: 30rem; } }
+    @media only screen and (max-width: 580px) {
+      .sec-form__icon {
+        height: 28rem; } }
+    @media only screen and (max-width: 400px) {
+      .sec-form__icon {
+        height: 23rem; } }
 
 .footer {
   height: 25rem;
