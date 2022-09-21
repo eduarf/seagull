@@ -72,12 +72,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  @media only screen and (max-width: 1170px){
+    padding: 2rem 4rem;
+}
+@media only screen and (max-width: 580px){
+  padding: 2rem 2rem;
+}
   &__top {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
+    @media only screen and (max-width: 580px){
+      width: 100%;
+    }
   }
   &__bottom {
     min-height: 35rem;
@@ -85,6 +94,9 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    @media only screen and (max-width: 480px){
+      justify-content: center;
+    }
   }
   &__product {
     height: 17rem;
@@ -94,14 +106,31 @@
     justify-content: space-between;
     align-items: center;
     text-align: justify;
+    @media only screen and (max-width: 850px){
+      width: 40%;
+      height: 19rem;
+    }
+    @media only screen and (max-width: 580px){
+      width: 45%;
+      height: 20rem;
+    }
+    @media only screen and (max-width: 480px){
+      width: 80%;
+      height: 16rem;
+      margin-top: 1rem;
+    }
   }
   &__icon {
-    height: 7rem;
-    width: 7rem;
+    height: 8rem;
+    width: 8rem;
   }
   &__expo {
     width: 85%;
     text-align: center;
+    @media only screen and (max-width: 580px){
+      width: 100%;
+      text-align: justify;
+    }
   }
 }
 
