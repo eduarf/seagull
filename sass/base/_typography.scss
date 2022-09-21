@@ -17,6 +17,9 @@
     font-size: 2.3rem;
     font-weight: 800;
     line-height: 1.3px;
+    @media only screen and (max-width: 640px){
+        line-height: normal;
+      }
 }
 .t2{
     font-family: 'Nunito Sans', sans-serif;
@@ -41,7 +44,14 @@
 .s1--white{
     font-size: 1rem;
     color: $color-white;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
+    @media only screen and (max-width: 451px){
+        text-align: justify;
+        font-size: 1.2rem;
+      }
+      @media only screen and (max-width: 378px){
+        font-size: 1.1rem;
+      }
 }
 .s1{
     font-size: 1rem;

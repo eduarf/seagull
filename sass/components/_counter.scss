@@ -1,29 +1,51 @@
 .counter {
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 16rem;
-    width: 22%;
-    border: 2px solid $color-white;
-    box-shadow: 2px 2px 5px rgba($color-white, .5);
-    &__icon{
-        height: 5rem;
-        width: 5rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 16rem;
+  width: 22%;
+  border: 2px solid $color-white;
+  box-shadow: 2px 2px 5px rgba($color-white, 0.5);
+  @media only screen and (max-width: 760px) {
+    width: 40%;
+  }
+  @media only screen and (max-width: 535px){
+    width: 55%;
+    height: 14rem;
+  }
+  @media only screen and (max-width: 500px){
+    width: 65%;
+  }
+  @media only screen and (max-width: 400px){
+    width: 80%;
+    &:first-child{
+        margin-top: 1rem;
     }
-    &__num{
-        font-family: 'Cabin', sans-serif;
-        font-size: 2.5rem;
-        font-weight: 400;
-        color: $color-white;
-        letter-spacing: -1px;
+  }
+  @media only screen and (max-width: 300px){
+    width: 100%;
+    &:first-child{
+        margin-top: 2rem;
     }
-    &__topic{
-        font-size: 1.2rem;
-        font-family: 'Cabin', sans-serif;
-        font-weight: 800;
-        letter-spacing: 1px;
-        color: $color-white;
-    }
+  }
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+  }
+  &__num {
+    font-family: "Cabin", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: $color-white;
+    letter-spacing: -1px;
+  }
+  &__topic {
+    font-size: 1.2rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: $color-white;
+  }
 }

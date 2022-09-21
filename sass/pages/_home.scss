@@ -11,7 +11,7 @@
     display: flex;
     width: 100%;
     height: 100%;
-    @media only screen and (max-width: 450px){
+    @media only screen and (max-width: 500px){
       flex-direction: column;
     }
   }
@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    @media only screen and (max-width: 450px){
+    @media only screen and (max-width: 500px){
       justify-content: center;
       align-items: center;
       height: 100%;
@@ -45,11 +45,7 @@
   &__image {
     height: 90%;
     width: 90%;
-    @media only screen and (max-width: 550px){
-      height: 100%;
-      width: 100%;
-    }
-    @media only screen and (max-width: 450px){
+    @media only screen and (max-width: 500px){
       height: 80%;
       width: 80%;
     }
@@ -143,6 +139,10 @@
     rgba($main-color, 0.2),
     rgba($main-color, 0.5)
   );
+  @media only screen and (max-width: 625px){
+    flex-direction: column;
+    padding: 2rem 0;
+}
   &__left {
     height: 80%;
     display: flex;
@@ -152,6 +152,19 @@
   }
   &__telephone {
     height: 30rem;
+    @media only screen and (max-width: 880px){
+      height: 26rem;
+  }
+  @media only screen and (max-width: 720px){
+    height: 22rem;
+  }
+  @media only screen and (max-width: 480px){
+    height: 20rem;
+}
+@media only screen and (max-width: 350px){
+  height: 20rem;
+  width: 15rem;
+}
   }
   &__right {
     display: flex;
@@ -165,6 +178,18 @@
   &__stores-logo {
     height: 7.5rem;
     width: 40em;
+    @media only screen and (max-width: 880px){
+        width: 30rem;
+        height: 6.5rem;
+    }
+    @media only screen and (max-width: 800px){
+      width: 25rem;
+      height: 5rem;
+  }
+  @media only screen and (max-width: 350px){
+    height: 4rem;
+    width: 21rem;
+}
   }
 }
 
@@ -180,6 +205,19 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 860px){
+   padding: 1.5rem 3rem;
+  }
+  @media only screen and (max-width: 800px){
+    padding: 3rem 1rem;
+  }
+  @media only screen and (max-width: 760px){
+    height: 60rem;
+    padding: 1rem;
+  }
+  @media only screen and (max-width: 535px){
+    height: 90rem;
+  }
   &__container {
     display: flex;
     flex-direction: column;
@@ -187,6 +225,9 @@
     align-items: center;
     width: 100%;
     height: 90%;
+    @media only screen and (max-width: 760px){
+      height: 100%;
+    }
   }
   &__top {
     height: 15%;
@@ -196,6 +237,15 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    @media only screen and (max-width: 860px){
+      margin-top: 2rem;
+    }
+    @media only screen and (max-width: 640px){
+      width: 90%;
+    }
+    @media only screen and (max-width: 575px){
+      width: 100%;
+    }
   }
   &__bottom {
     display: flex;
@@ -203,6 +253,13 @@
     justify-content: space-between;
     width: 100%;
     height: 85%;
+    @media only screen and (max-width: 760px){
+      flex-wrap: wrap;
+      padding: 0 3rem;
+    }
+    @media only screen and (max-width: 535px){
+      justify-content: center;
+    }
   }
 }
 
