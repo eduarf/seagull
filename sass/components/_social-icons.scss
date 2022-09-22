@@ -3,7 +3,23 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    &__icon{
+    @media only screen and (max-width: 900px){
+        width: 25%;
+       }
+       @media only screen and (max-width: 768px){
+        width: 35%;
+       }
+       @media only screen and (max-width: 680px){
+        width: 45%;
+       }
+       @media only screen and (max-width: 580px){
+        width: 55%;
+       }
+       @media only screen and (max-width: 480px){
+        width: 65%;
+       }
+    &__icon
+    {
         height: 2.5rem;
         width: 2.5rem;
     }
