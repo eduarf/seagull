@@ -39,9 +39,20 @@
   &--middle {
     font-size: 0.9rem;
     padding: 1.5rem 7rem;
+    @media only screen and (max-width: 768px){
+      padding: 1.3rem 5.8rem; 
+     }
   }
   &--big{
     font-size: 1rem;
     padding: 2rem 9rem;
+    @media only screen and (max-width: 768px){
+      padding: 1.7rem 7.5rem;  
+     }
+     @media only screen and (max-width: 690px){
+      padding: 1.4rem 7.3rem;
+      font-size: .9rem;
+      
+     }
   }
 }
