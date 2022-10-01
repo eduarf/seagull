@@ -312,7 +312,8 @@
     ),
     url("../images/office_image.jpg");
   background-size: cover;
-  background-attachment: center;
+  background-attachment: fixed;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
