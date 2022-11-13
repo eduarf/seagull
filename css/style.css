@@ -231,7 +231,8 @@ object {
       color: #0053bf; }
 
 .nav-bottom-show {
-  visibility: hidden; }
+  visibility: hidden;
+  transition: all .3s; }
 
 .counter {
   padding: 1rem 0;
